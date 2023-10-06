@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF7ED;
+}
+
+.navbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF7ED;
+}
+
+.nav-title {
+    flex-grow: 1;
+    margin: 40px 30px;
+    text-decoration: none;
+    color: #161616;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+}
+
+.image {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    background-image: url(D:/coding/New/react-app/src/image.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
+
+.img-head-text {
+    margin: 0;
+
+}
+
+.img-btn {
+    width: 20%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: orange;
+    text-align: center;
+    text-decoration: none;
+    color: #161616;
+    font-size: 15px;
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-info {
+    padding: 50px 30px;
+    width: 60%;
+    font-size: 25px;
+}
+
+.about-vans {
+    background-color: #FFCC8D;
+    width: 30%;
+    padding: 10px 20px 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.about-vans-text {
+    margin: 20px;
+}
+
+.about-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.van-list-container {
+    padding-inline: 23px;
+}
+
+.van-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.van-img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.van-type {
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type:focus {
+    outline: none;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover,
+.van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover,
+.van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+    background-color: #161616;
+}
+
+.foot-home {
+    text-align: center;
+    background-color: #252525;
+    color: gray;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.vans-text {
+    font-weight: 600;
+}
+
+i[class*='van-type-'] {
+    padding: 7px 14px;
+}
+
+.foot {
+    text-align: center;
+    background-color: #252525;
+    color: gray;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .image {
+        font-size: 13px;
+        padding: 30px;
+        background-image: url(D:/coding/New/react-app/src/image.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 400px;
+        padding-top: 10%;
+        padding-bottom: 70%;
+    }
+
+    .navbar {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #FFF7ED;
+    }
+
+    .nav-title {
+        flex-grow: 1;
+        margin: 40px 20px;
+
+    }
+
+    .nav-links {
+        text-decoration: none;
+        color: black;
+        margin: 40px 25px;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .img-btn {
+        width: 50%;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: orange;
+        margin: 10px;
+    }
+
+    .about-info {
+        padding: 20px 10px;
+        text-align: center;
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .about-vans {
+        width: 70%;
+    }
+
+    .foot {
+        padding: 50px;
+    }
+}
